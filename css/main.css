@@ -1,0 +1,376 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #4B5563;
+}
+.black-scr {
+	position: fixed;
+	content: '';
+	pointer-events: none;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.1);
+}
+body.open .black-scr {
+	opacity: 1;
+	pointer-events: visible;
+}
+body.open {
+	overflow-y: hidden;
+}
+.wrap {
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+li {
+	display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+div,
+p,
+ul,
+li,
+span,
+button,
+input,
+a,
+form,
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.df {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.aic {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.jcsb {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.jcc {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.fww {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.aifs {
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+.fdc {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.jcfe {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	   -moz-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.trans {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+a {
+	color: #212121;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+a:hover {
+	text-decoration: underline;
+}
+.title-l {
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #F9FAFB;
+}
+.title-m {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #1F2937;
+}
+.title-sm {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #1F2937;
+	max-width: 260px;
+}
+textarea:active,
+textarea:focus {
+	outline: none;
+}
+input[type=text],
+input[type=submit],
+textarea {
+	-webkit-appearance: none;
+}
+input {
+	border: 0;
+	outline: none;
+}
+.menu_btn {
+	display: none;
+}
+.btn {
+	border: 1px solid #FFFFFF;
+	padding: 20px 40px;
+	color: #fff;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.btn:hover {
+	text-decoration: none;
+	background: #fff;
+	color: #1F2937;
+}
+.center {
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+
+/* -----icons---- */
+
+.wh50 {
+	width: 50px;
+	height: 50px;
+}
+/* -----------------------------Header---------------------------- */
+
+
+.header {
+	padding: 5px 0;
+	background: #F9FAFB;
+}
+.header__nav {
+	margin: 0 52px 0 auto;
+}
+.header__nav ul li:not(:last-child) {
+	margin-right: 45px;
+}
+.header__nav ul li a {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 120%;
+	color: #1F2937;
+}
+.header__nav ul li a:hover,
+.header__phone:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+.header__phone {
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	color: #F15723;
+}
+.main {
+	padding: 265px 0 229px;
+	background: url('../img/main-bg.png') no-repeat center center / cover;
+}
+.main__wrap {
+	text-align: center;
+}
+.main__wrap .title-l {
+	margin-bottom: 118px;
+}
+.info {
+	padding: 57px 0 65px;
+	background: #F9FAFB;
+}
+.info__item-wrap {
+	width: 25%;
+}
+.info__item-wrap:not(:last-child) {
+	border-right: 2px solid #F15723;
+}
+.info__item-wrap:not(:first-child) {
+	padding-left: 18px;
+}
+.info__item {
+	padding: 15px 24px 32px 0;
+}
+.info__title {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 50px;
+	margin-bottom: 11px;
+	color: #1F2937;
+}
+.info__item {
+	line-height: 22px;
+	font-family: Montserrat;
+}
+.about {
+	padding: 65px 0 100px;
+	background: #F9FAFB;
+}
+.title__wrap-r {
+	width: 65.5%;
+}
+.title__wrap-l {
+	width: 34.5%;
+	padding-top: 17px;
+}
+.title__wrap-r .title-m {
+	margin-bottom: 57px;
+}
+.title__txt {
+	-webkit-columns: 2;
+	   -moz-columns: 2;
+	        columns: 2;
+	-webkit-column-gap: 42px;
+	   -moz-column-gap: 42px;
+	        column-gap: 42px;
+}
+.about .title__txt {
+	max-height: 240px;
+	overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.title__wrap {
+	margin-bottom: 50px;
+}
+.about__img {
+	height: 560px;
+}
+.about__img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.about__bottom-itemwrap {
+	width: 33%;
+	padding: 10px 0;
+}
+.about__bottom-item {
+	padding: 0 25px 11px 0;
+}
+.about__bottom-item svg {
+	color: #F15723;
+}
+.about__bottom-title {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #1F2937;
+}
+.about__bottom-item p {
+	font-family: Montserrat;
+}
+.about__bottom-wrap {
+	margin: -10px 0;
+}
+.about .slick-arrow::before {
+	display: none;
+}
+.about .slick-arrow:after {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.about .slick-prev:after {
+	background: url('../img/svg/arrow.svg') no-repeat 0 0 / cover;
+}
+.about .slick-next:after {
+	background: url('../img/svg/arrow-next.svg') no-repeat 0 0 / cover;
+}
+.about .slick-arrow {
+	z-index: 5;
+	top: 39% !important;
+	width: 30px !important;
+	height: 30px !important;
+}
+.about .slick-prev {
+	left: 0 !important;
+}
+.about .slick-next {
+	right: unset !important;
+	left: 42px !important;
+}
