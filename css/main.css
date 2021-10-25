@@ -303,6 +303,9 @@ input {
 	   -moz-column-gap: 42px;
 	        column-gap: 42px;
 }
+.title__txt p {
+	margin-bottom: 10px;
+}
 .about .title__txt {
 	max-height: 240px;
 	overflow: hidden;
@@ -373,4 +376,55 @@ input {
 .about .slick-next {
 	right: unset !important;
 	left: 42px !important;
+}
+.description {
+	padding: 87px 0 100px;
+}
+.description__wrap {
+	margin: 49px -20px -15px;
+}
+.description__item-wrap:nth-child(3) .description__item,
+.description__item-wrap:nth-child(4) .description__item {
+	border-left: 3px solid #F15723;
+	padding-left: 21px;
+}
+.description__item-wrap:nth-child(1) .description__item,
+.description__item-wrap:nth-child(2) .description__item {
+	border-right: 3px solid #F15723;
+	padding-right: 10px;
+}
+.description__item-wrap {
+	width: 50%;
+	padding: 15px 20px;
+}
+.description__img {
+	width: 260px;
+	height: 260px;
+}
+.description__item-wrap:nth-child(1) .description__img,
+.description__item-wrap:nth-child(2) .description__img {
+	margin-right: 36px;
+}
+.description__item-wrap:nth-child(3) .description__img,
+.description__item-wrap:nth-child(4) .description__img {
+	margin-left: 36px;
+}
+.description__img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.description__info {
+	width: 46%;
+	padding-top: 9px;
+}
+.description__title {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 120%;
+	margin-bottom: 19px;
+	color: #F15723;
 }
