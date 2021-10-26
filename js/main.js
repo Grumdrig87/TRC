@@ -1,4 +1,11 @@
 jQuery(document).ready(function($) {
+  // slide to id
+  $('[data-scroll]').click(function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
   // burger
   $('[data-burger]').click(function() {
     $('html').toggleClass("open");
@@ -14,17 +21,6 @@ if (jQuery('[data-about]').length > 0) {
       speed: 300,
       slidesToShow: 1,
       infinite: true,
-      // responsive: [{
-      //     breakpoint: 993,
-      //     settings: {
-      //         slidesToShow: 2
-      //     }
-      // },{
-      //   breakpoint: 769,
-      //   settings: {
-      //       slidesToShow: 1
-      //   }
-      // } ]
   });
 }
   
@@ -42,6 +38,11 @@ if (jQuery('[data-about]').length > 0) {
     });
   };
   closeBurger();
+  //accordeon
+  $('[data-flor]').click(function(){
+    $(this).toggleClass('open');
+    $(this).parent().find('[data-florinfo]').slideToggle(500)
+  })
   // adaptive
 
     if ($(window).width() < 994) {
