@@ -840,3 +840,50 @@ input {
 .footer__bott a:hover {
 	text-decoration: none;
 }
+.blog-cont {
+	padding: 87px 0 106px;
+}
+.blog-cont .title-m {
+	margin-bottom: 50px;
+	max-width: 760px;
+}
+.blog-cont__txt p:not(:last-child),
+.blog-cont__txt ul:not(:last-child),
+.blog-cont__txt ol:not(:last-child),
+.blog-cont__txt .wp-block-image:not(:last-child) {
+	margin-bottom: 30px;
+}
+.blog-cont__txt .wp-block-column {
+	width: 48.5%;
+}
+.blog-cont__txt figure {
+	padding: 0;
+	margin: 0;
+}
+.blog-cont__txt .wp-block-image img {
+	display: block
+}
+.blog-cont__txt .wp-block-columns:not(:last-child) {
+	margin-bottom: 40px;
+}
+.blog-cont__txt blockquote {
+	border-left: 5px solid #F15723;
+	padding: 2px 0 8px 18px;
+	margin: 43px 0 36px;
+}
+.blog-cont__txt blockquote p {
+	font-style: italic;
+	font-size: 20px;
+	line-height: 150%;
+}
+.blog-cont__txt h2 {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 120%;
+	max-width: 760px;
+	margin: 36px 0 12px;
+}
+.blog-cont__txt li {
+	display: list-item;
+}
