@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
 if (jQuery('[data-about]').length > 0) {
   $('[data-about]').slick({
       dots: false,
+      adaptiveHeight: true,
       speed: 300,
       slidesToShow: 1,
       infinite: true,
@@ -45,7 +46,21 @@ if (jQuery('[data-about]').length > 0) {
   })
   // adaptive
 
-    if ($(window).width() < 994) {
-      
+    if ($(window).width() < 769) {
+      if (jQuery('[data-news]').length > 0) {
+        $('[data-news]').slick({
+            dots: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 2,
+            infinite: true,
+            responsive: [{
+              breakpoint: 577,
+              settings: {
+                  slidesToShow: 1
+              }
+          } ]
+        });
+      }
     }
 });

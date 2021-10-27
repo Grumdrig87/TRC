@@ -36,6 +36,7 @@ body.open {
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 }
 .container {
 	width: 1160px;
@@ -228,6 +229,7 @@ input {
 .header {
 	padding: 5px 0 0;
 	background: #F9FAFB;
+	position: relative;
 }
 .header__nav {
 	margin: 0 52px 0 auto;
@@ -584,6 +586,7 @@ input {
 	line-height: 120%;
 	color: #374151;
 	min-width: 200px;
+	margin-bottom: 10px;
 }
 .flor__shops-square {
 	display: block;
@@ -860,15 +863,15 @@ input {
     padding: 0;
     margin: 40px 0 0;
 }
-.blocks-gallery-grid,
-.wp-block-media-text {
+.blog-cont__txt .blocks-gallery-grid,
+.blog-cont__txt .wp-block-media-text {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
 }
-.blocks-gallery-grid {
+.blog-cont__txt .blocks-gallery-grid {
 	-webkit-flex-wrap: wrap;
 	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
@@ -876,7 +879,7 @@ input {
 	padding: 0;
 	margin: 0;
 }
-.wp-block-gallery .blocks-gallery-item {
+.blog-cont__txt .wp-block-gallery .blocks-gallery-item {
     margin: 0 40px 40px 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -908,7 +911,7 @@ input {
     width: -moz-calc(50% - 40px);
     width: calc(50% - 40px);
 }
-.blocks-gallery-item img {
+.blog-cont__txt .blocks-gallery-item img {
 	height: 100%;
 	display: block;
 	width: 100%;
@@ -920,10 +923,10 @@ input {
     -o-object-fit: cover;
     object-fit: cover;
 }
-.wp-block-media-text__media {
+.blog-cont__txt .wp-block-media-text__media {
 	margin: 0 40px 0 0 !important;
 }
-.wp-block-gallery.columns-2 .blocks-gallery-item:nth-of-type(2n) {
+.blog-cont__txt .wp-block-gallery.columns-2 .blocks-gallery-item:nth-of-type(2n) {
 	margin-right: 0;
 }
 .blog-cont__txt blockquote {
