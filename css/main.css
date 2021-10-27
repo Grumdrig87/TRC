@@ -849,27 +849,87 @@ input {
 }
 .blog-cont__txt p:not(:last-child),
 .blog-cont__txt ul:not(:last-child),
-.blog-cont__txt ol:not(:last-child),
-.blog-cont__txt .wp-block-image:not(:last-child) {
-	margin-bottom: 30px;
-}
-.blog-cont__txt .wp-block-column {
-	width: 48.5%;
+.blog-cont__txt ol:not(:last-child) {
+	margin-bottom: 20px;
 }
 .blog-cont__txt figure {
 	padding: 0;
 	margin: 0;
 }
-.blog-cont__txt .wp-block-image img {
-	display: block
+.blog-cont__txt figure.wp-block-gallery {
+    padding: 0;
+    margin: 40px 0 0;
 }
-.blog-cont__txt .wp-block-columns:not(:last-child) {
-	margin-bottom: 40px;
+.blocks-gallery-grid,
+.wp-block-media-text {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.blocks-gallery-grid {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.wp-block-gallery .blocks-gallery-item {
+    margin: 0 40px 40px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    width: -webkit-calc(50% - 40px);
+    width: -moz-calc(50% - 40px);
+    width: calc(50% - 40px);
+}
+.blocks-gallery-item img {
+	height: 100%;
+	display: block;
+	width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.wp-block-media-text__media {
+	margin: 0 40px 0 0 !important;
+}
+.wp-block-gallery.columns-2 .blocks-gallery-item:nth-of-type(2n) {
+	margin-right: 0;
 }
 .blog-cont__txt blockquote {
 	border-left: 5px solid #F15723;
-	padding: 2px 0 8px 18px;
-	margin: 43px 0 36px;
+	padding: 2px 0 8px 13px;
+    margin: 50px 0 36px;
 }
 .blog-cont__txt blockquote p {
 	font-style: italic;
